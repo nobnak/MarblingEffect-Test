@@ -1,0 +1,3 @@
+[submodule "Assets/Packages/MarblingEffect"]
+	path = Assets/Packages/MarblingEffect
+	url = https://github.com/nobnak/MarblingEffect.git
