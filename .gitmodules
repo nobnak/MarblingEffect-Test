@@ -7,3 +7,6 @@
 [submodule "Assets/Packages/LLGraphicsUnity"]
 	path = Assets/Packages/LLGraphicsUnity
 	url = https://github.com/nobnak/LLGraphicsUnity.git
+[submodule "Assets/Packages/TextureViewer-Unity"]
+	path = Assets/Packages/TextureViewer-Unity
+	url = https://github.com/nobnak/TextureViewer-Unity.git
