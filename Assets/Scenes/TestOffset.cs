@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteAlways]
 public class TestOffset : MonoBehaviour {
 
     public Dependency dep = new Dependency();
