@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Background
+  m_Name: Cylinder
   m_Shader: {fileID: 4800000, guid: ba97fe465ae03cb479061cfb227ba800, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
