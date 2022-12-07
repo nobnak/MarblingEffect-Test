@@ -1,4 +1,4 @@
-Shader "Marbling/Unlit" {
+Shader "Marbling/Surface" {
     Properties {
         _MainTex ("Texture", 2D) = "white" {}
         _OffsetTex ("Offset", 2D) = "black" {}
@@ -19,6 +19,7 @@ Shader "Marbling/Unlit" {
             };
 
             sampler2D _MainTex;
+            float4 _MainTex_ST;
             float4 _MainTex_TexelSize;
         ENDCG
 
@@ -38,8 +39,9 @@ Shader "Marbling/Unlit" {
                 return o;
             }
             float4 frag (v2f i) : SV_Target {
-                float4 uv = tex2D(_OffsetTex, i.uv);
-                float4 csrc = tex2D(_MainTex, uv.xy);
+                float2 uv = tex2D(_OffsetTex, i.uv).xy;
+                float2 uv_MainTex = TRANSFORM_TEX(uv, _MainTex);
+                float4 csrc = tex2D(_MainTex, uv_MainTex);
                 return csrc;
             }
             ENDCG
